@@ -4,6 +4,12 @@ html { box-sizing: border-box; }
 
 body {
     text-rendering: optimizeLegibility;
+    background-color: #f5f5f5;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
 }
 
 /*
@@ -21,3 +27,139 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+.zbozi {
+    display: flex;
+    margin: 120px;
+    max-width: 670px;
+    min-height: 440px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px 1px #959595;
+}
+
+/* Poznamka - kod je celkem dlouhy, a nektere veci by mohly byt na prvni pohled vynechany, 
+ale zalezelo mi na tom, aby vse zustavalo uvnitr boxu i pri zuzeni okna (napr. pro potencialni 
+mobilni view). Jedina vyjimka je bota, jinak se vse ostatni chova, jak ma. */
+
+.vizual {
+    background: linear-gradient(#06d7c1, #50cc49);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 335px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.detaily {
+    flex-grow: 1;
+    flex-basis: 335px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bota {
+    position: absolute;
+    top: 135px;
+    right: 0px;
+}
+
+.logo {
+    padding: 30px;
+}
+
+.slogan {
+    padding-left: 30px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.cenovka {
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 230px;
+}
+
+.cena {
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+}
+
+.zaruka {
+    color: white;
+    font-size: 12px;
+}
+
+.detaily {
+    padding: 30px 30px 0px 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+}
+
+.nazev {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.produkt {
+    color: #959595;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.popis {
+    padding: 30px 0px;
+    margin: 0px;
+    border-bottom: solid #06d7c1 1.5px;
+}
+
+.parametr {
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.velikosti {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0px;
+    margin-bottom: 65px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+.vybrana{
+    color: #f15f42;
+    font-weight: 500;
+    border: solid 1px #f15f42;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.tlacitko {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: orangered;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 3px 7px 0.5px #cfcdcd;
+    padding: 15px 25px;
+    display: block;
+    max-width: 140px;
+    margin-bottom: 30px;
+}
